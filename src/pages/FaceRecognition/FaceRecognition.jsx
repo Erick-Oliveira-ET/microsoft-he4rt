@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import faceDetection from './faceDetection';
 import Navbar from '../../components/Navbar/Navbar';
 
+import searchIcon from '../../icons/search-circle-outline.svg';
+
 import './face-detection.css';
 
 const FaceRecognition = () => {
@@ -36,7 +38,10 @@ const FaceRecognition = () => {
             }
 
             <div className="face-submit">
-                <input type="text" className="face-input" onChange={handleInputChange}/>
+                <img src={searchIcon} className="searchIcon" alt=""/>
+                <input type="text" className="face-input" onChange={handleInputChange}
+                    placeHolder="Digite a URL de uma imagem."
+                />
                 <button type="button" className="face-button" onClick={handleSubmitClick}>Submit</button>
 
             </div>
