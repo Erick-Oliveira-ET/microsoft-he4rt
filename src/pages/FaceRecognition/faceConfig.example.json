@@ -1,0 +1,4 @@
+{
+    "subscriptionKey": "SUBSCRIPTION_KEY",
+    "uriBase": "https://PROJECT_NAME.cognitiveservices.azure.com/face/v1.0/detect"
+}
