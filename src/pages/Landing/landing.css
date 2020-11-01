@@ -11,3 +11,119 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  #landing-container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    background: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #landing-container main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #landing-container main .landing-title {
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #landing-container main .landing-title h1{
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #landing-container main .landing-title h1 span{
+    padding: 0 0.67rem;
+    margin: 0;
+    
+    filter: brightness(0) invert(1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 8.8rem;
+    line-height: 100%;
+    letter-spacing: -0.5rem;
+
+    animation: colorCycle 6s ease-in-out infinite;
+  }
+
+  #landing-container main .landing-title h1 span:nth-child(1){
+    background-image: linear-gradient(90deg, #6ba3ff, #000eff);
+  }
+  #landing-container main .landing-title h1 span:nth-child(2){
+    background-image: linear-gradient(90deg, #6a1abe 0%, #ff3fe0 100%);
+    animation-delay: 1s;
+  }
+  #landing-container main .landing-title h1 span:nth-child(3){
+    padding-bottom: 1.5rem;
+    background-image: linear-gradient(90deg, #1abe3f 0%, #3fffff 100%);
+    animation-delay: 2s;
+  }
+
+  #landing-container main .landing-text{
+    padding-top: 0px;
+    font-size: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #nav-container main .landing-text .user-info{
+    padding: 0px 20px;
+    margin: 0px;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing-container .user-info .signIn{
+    font-family: 'Poppings', sans-serif;
+    letter-spacing: 1px;
+    padding: 20px 60px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 1.5rem;
+
+    background: linear-gradient(90deg, #7004f1 0%, #cb11a6 100%);
+} 
+
+#landing-container .user-info .signIn:hover{
+    cursor: pointer;
+}
+
+  @keyframes colorCycle {
+    0%,80%{
+      filter: brightness(0) invert(1);
+    }
+    10%, 60%{
+      filter: none;
+    }
+  }

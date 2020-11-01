@@ -1,0 +1,199 @@
+#face-recognition-container{
+    min-height: 100vh;
+
+    background: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#face-recognition-container h1.h1-title{
+    padding: 60px 0px 20px 0px;
+
+    font-size: 5rem;
+}
+#face-recognition-container h1.h1-title2{
+    padding: 60px 0px 20px 0px;
+
+    font-size: 2rem;
+}
+
+#face-recognition-container .face-submit .face-input,
+#face-recognition-container .face-submit .face-button{
+    border: none;
+}
+
+#face-recognition-container .face-submit .face-input {
+    width: 500px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+#face-recognition-container .face-submit .face-button{
+    height: 42px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px 20px;
+
+    letter-spacing: 2px;
+
+    background: #5050f7;
+    color: white;
+}
+
+#face-recognition-container .face-submit .face-button:hover{
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(90deg, #6a1abe 0%, #ff3fe0 100%);
+}
+
+#face-recognition-container main.face-card{
+    height: 100%;
+    min-width: 90vw;
+
+    /* overflow: hidden; */
+
+    margin: 30px 10px;
+    box-shadow: inset 0px 0px 10px 1px #7a7a7a;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#face-recognition-container main.face-card .face-img{
+    position: relative;
+
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+
+}
+
+#face-recognition-container main.face-card img{
+    position: relative;
+}
+
+#face-recognition-container main.face-card .face-specific-info{
+    height: 100%;
+    width: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#face-recognition-container main.face-card .face-specific-info:hover{
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+    color: black;
+    font-weight: 800;
+}
+
+#face-recognition-container main.face-card .face-info{
+    width: 100%;
+    max-width: 90vw;
+    padding-bottom: 60px;
+    margin: 20px;
+
+    color: white;
+    
+    box-shadow: inset 0px 0px 10px 1px #7a7a7a;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#face-recognition-container main.face-card .face-info .face-info-single-wrapper{
+    overflow: hidden;
+    margin: 20px 20px;
+    padding: 0px 0px 20px 0px;
+
+    box-shadow: inset 0px 0px 10px 1px #7a7a7a;
+    border-radius: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.face-h1{
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(90deg, #0025ff 3%, #fe1a3a 76%, #fff100 100%, #0cf5fe 100%);
+
+    text-align: center;
+
+}
+
+div.block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.half-block {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.row{
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h2.h2-emotions{
+    color:#8b0cfe;
+}
+
+h2.h2-general{
+    color:#0cf5fe;
+}
+
+#face-recognition-container main.face-card .face-info .single-item-info{
+    
+    
+    display: flex;
+    flex: 0 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#face-recognition-container main.face-card .face-info .single-item-info{
+    padding: 0px 20px;
+}
+
+#face-recognition-container main.face-card .face-info .single-item-info strong{
+    padding-right: 5px;
+}

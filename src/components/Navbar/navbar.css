@@ -34,12 +34,14 @@
 #nav-container .nav-items .nav-strong{
     padding: 10px 10px;
     border-radius: 10px;
-    transition: 0.4s background;
 }
 
 #nav-container .nav-items .nav-strong:hover{
     border-radius: 10px;
-    background: #1f0419;
+    color: black;
+    font-weight: 600;
+    
+    background: linear-gradient(90deg, #fff100 0%, #6dff3f 100%);
 }
 
 #nav-container .nav-items img{
@@ -70,3 +72,7 @@
 
     background: linear-gradient(90deg, #7004f1 0%, #cb11a6 100%);
 } 
+
+#nav-container .user-info button:hover{
+    cursor: pointer;
+}

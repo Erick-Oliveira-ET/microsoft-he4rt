@@ -5,7 +5,7 @@ import { useAuth } from '../../context/auth';
 import './navbar.css'
 
 const Navbar = () =>{
-    const { signIn, signOut, user, signed } = useAuth();
+    const { signOut, user, signed } = useAuth();
 
 
     return (
@@ -14,26 +14,20 @@ const Navbar = () =>{
                 <Link to="https://discord.com/channels/452926217558163456/540987396532207638" className="nav-link">
                     <img src="https://cdn.discordapp.com/icons/452926217558163456/a_29595be8ac4681524062a3226c054073.png?size=128" alt="microsoft"/>
                 </Link>
+                
+                {signed && 
+                    <Link to="/face-recognition" className="nav-strong">Face Detection</Link>
+                }
 
-                <Link to="/face-recognition" className="nav-strong">Face Detection</Link>
             </div>
 
-                { signed ? 
+                { signed &&
                     <div className="user-info">
                         <strong>{user.user.name}</strong>
                         <button type="button" className="signOut"
                             onClick={() => signOut()}
                         >
                             SignOut
-                        </button>
-
-                    </div>
-                    :
-                    <div className="user-info">
-                        <button type="button" className="signIn"
-                            onClick={() => signIn()}
-                        >
-                            SignIn
                         </button>
 
                     </div>

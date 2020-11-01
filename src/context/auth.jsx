@@ -22,8 +22,8 @@ export const AuthProvider = ({children}) => {
     useEffect(() => {
         async function loadStorageData() {
 
-            const userData = sessionStorage.getItem('msalAccount');
-            console.log("userData " + userData);
+            let userData = sessionStorage.getItem('msalAccount');
+            userData = JSON.parse(userData);
             if (userData) {
               setUser({user: {
                 name: userData.user.name,
