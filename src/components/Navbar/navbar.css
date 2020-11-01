@@ -1,0 +1,72 @@
+#nav-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background: #000000;
+    color: #FFFFF0;
+    padding: 10px 0px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-container .nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-container .nav-items .nav-strong,
+#nav-container .nav-items .nav-link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#nav-container .nav-items img{
+    height: 100%;
+    margin: 0px 20px;
+}
+
+#nav-container .nav-items .nav-strong{
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: 0.4s background;
+}
+
+#nav-container .nav-items .nav-strong:hover{
+    border-radius: 10px;
+    background: #1f0419;
+}
+
+#nav-container .nav-items img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+#nav-container .user-info{
+    padding: 0px 20px;
+    margin: 0px;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-container .user-info button{
+    margin: 0px 0px 0px 5px;
+    font-family: 'Poppings', sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+
+    background: linear-gradient(90deg, #7004f1 0%, #cb11a6 100%);
+} 
