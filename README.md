@@ -7,4 +7,4 @@ The face recognition API was really simple to use and the documentation was real
 
 In general, was a really fun experience. I've never had to make a project in so short time, and 36 hours was really short mostly because of the strugle with Graph. But in the end I sure learned a lot.
 
-[Landing Page Image](https://github.com/Erick-Oliveira-ET/microsoft-he4rt/blob/main/image.png)
+![Landing Page Image](https://github.com/Erick-Oliveira-ET/microsoft-he4rt/blob/main/image.png)
